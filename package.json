@@ -1,0 +1,23 @@
+{
+  "name": "toralv-dev",
+  "version": "1.0.0",
+  "description": "My website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Toraalv/toralv-dev.git"
+  },
+  "author": "Arvid Rimmerfors",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Toraalv/toralv-dev/issues"
+  },
+  "homepage": "https://github.com/Toraalv/toralv-dev#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
+}

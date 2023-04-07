@@ -1,0 +1,22 @@
+:root {
+	--bkg_color: #121212;
+	--box_bkg_color: #171717;
+	--box_bkg_color_H: #4c4c4c;
+	--border_color: #222;
+	--border_color_H: #4c4c4c;
+	--text_color: #FFFFFFDE;
+	--light_text_color: #c1c8cc;
+}
+
+html {
+	background-color: var(--bkg_color);
+	color: var(--text_color);
+}
+
+.center-screen {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 100vh;
+  }
