@@ -11,6 +11,34 @@
 html {
 	background-color: var(--bkg_color);
 	color: var(--text_color);
+	font-family: 'Noto Sans', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+img{vertical-align:bottom}
+
+main {
+	background-color: var(--box_bkg_color);
+	border: var(--border_color) 2px solid;
+	padding: 10px;
+	max-width: 30%;
+}
+
+main img {
+	max-width: 100px;
+}
+
+#name {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px;
+}
+
+#name h1{
+	font-size: 40pt;
+	margin: 0 0 0 20px;
 }
 
 .center-screen {
@@ -19,4 +47,4 @@ html {
 	align-items: center;
 	text-align: center;
 	min-height: 100vh;
-  }
+}
