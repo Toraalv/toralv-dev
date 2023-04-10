@@ -8,39 +8,6 @@
 	--light_text_color: #c1c8cc;
 }
 
-html {
-	background-color: var(--bkg_color);
-	color: var(--text_color);
-	font-family: 'Noto Sans', sans-serif;
-	padding: 0;
-	margin: 0;
-}
-
-img{vertical-align:bottom}
-
-main {
-	background-color: var(--box_bkg_color);
-	border: var(--border_color) 2px solid;
-	padding: 10px;
-	max-width: 30%;
-}
-
-main img {
-	max-width: 100px;
-}
-
-#name {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 20px;
-}
-
-#name h1{
-	font-size: 40pt;
-	margin: 0 0 0 20px;
-}
-
 .center-screen {
 	display: flex;
 	justify-content: center;
@@ -48,3 +15,104 @@ main img {
 	text-align: center;
 	min-height: 100vh;
 }
+
+html {
+	background-color: var(--bkg_color);
+	color: var(--text_color);
+	font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+img{vertical-align:bottom}
+
+/* Projekt */
+main {
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
+	justify-content: space-evenly;
+	background-color: var(--box_bkg_color);
+	border-left: 2px solid var(--border_color);
+
+}
+
+.project-item {
+	background-color: var(--bkg_color);
+	border: 1px solid var(--border_color);
+}
+/* Tills hit */
+
+/* Vänstra spalten */
+aside {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: var(--box_bkg_color);
+	border-right: var(--border_color) 2px solid;
+	padding: 10px;
+	padding-bottom: 30px;
+	margin-right: 20px;
+	max-width: 300px;
+}
+
+
+#bio img {
+	max-width: 100px;
+}
+#bio p {
+	margin-top: 5px;
+}
+
+#name {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#name h1{
+	font-size: 40pt;
+	margin: 0 20px 0 0;
+}
+
+
+#contact {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-item:hover {
+	background-color: var(--box_bkg_color_H);
+}
+
+#discord img {
+	background-color: #5865F2;
+}
+
+.contact-item a {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.contact-item img{
+	padding: 7px 4px 7px 4px;
+	max-width: 20px;
+	margin-right: 10px;
+}
+/* Till hit */
