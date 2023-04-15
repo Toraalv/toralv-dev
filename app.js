@@ -5,11 +5,16 @@ const path = require("path");
 const fs = require("fs");
 
 app.use("/static", express.static(path.join(__dirname, "public")));
-
+app.use("/rtk-joyo-comparer/Server/static", express.static(path.join(__dirname, "rtk-joyo-comparer/Server/public")));
 
 app.get("/", (req, res) =>
 {
 	res.sendFile(__dirname + "/index.html");
+});
+
+app.get("/rtk-joyo-comparer", (req, res) =>
+{
+	res.sendFile(__dirname + "/rtk-joyo-comparer/Server/index.html");
 });
 
 app.all("*", (req, res) => { // for everything else
