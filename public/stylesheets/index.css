@@ -6,6 +6,7 @@
 	--border_color_H: #4c4c4c;
 	--text_color: #FFFFFFDE;
 	--light_text_color: #c1c8cc;
+	--link_color: #3366CC;
 }
 
 .center-screen {
@@ -20,6 +21,7 @@ html {
 	background-color: var(--bkg_color);
 	color: var(--text_color);
 	font-family: 'Noto Sans', sans-serif;
+	font-weight: 500;
 }
 
 body {
@@ -31,13 +33,13 @@ body {
 	padding: 0;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
 
 a {
 	text-decoration: none;
-	color: inherit;
+	color: var(--link_color);
 }
 
 img{vertical-align:bottom}
@@ -47,7 +49,7 @@ main {
 	display: flex;
 	flex-grow: 1;
 	flex-direction: column;
-	justify-content: space-evenly;
+	/* justify-content: space-evenly; */
 	background-color: var(--box_bkg_color);
 	border-left: 2px solid var(--border_color);
 
@@ -56,6 +58,22 @@ main {
 .project-item {
 	background-color: var(--bkg_color);
 	border: 1px solid var(--border_color);
+	margin: 10px;
+	padding: 10px;
+}
+
+.project-name {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.project-name a {
+	margin-left: 4px;
+}
+
+.project-desc p {
+	font-weight: 400;
 }
 /* Tills hit */
 
@@ -108,6 +126,8 @@ aside {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	text-decoration: none;
+	color: inherit;
 }
 
 .contact-item img{
