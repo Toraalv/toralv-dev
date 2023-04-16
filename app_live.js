@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 1770;
+const port = 443;
 const path = require("path");
 const fs = require("fs");
 const https = require("https");
@@ -46,6 +46,6 @@ app.all("*", (req, res) => { // for everything else
 
 const httpsServer = https.createServer(credentials, app);
 
-httpsServer.listen(443, () => {
+httpsServer.listen(port, () => {
     console.log("Running on port " + port);
 });
