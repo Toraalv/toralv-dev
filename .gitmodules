@@ -1,3 +1,6 @@
 [submodule "rtk-joyo-comparer"]
 	path = rtk-joyo-comparer
 	url = git@github.com:Toraalv/rtk-joyo-comparer.git
+[submodule "UtaSuki"]
+	path = UtaSuki
+	url = git@github.com:Toraalv/UtaSuki.git
