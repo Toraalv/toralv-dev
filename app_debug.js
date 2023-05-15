@@ -11,18 +11,36 @@ const utasukiStatic = express.static(path.join(__dirname, "UtaSuki/public"));
 // serving two different statics based on where you are on the site
 // feels stupid, but I don't want to hardcode inside of rtk-joyo-comparer
 // since the request in there refers to this local public directory
+// app.use("/static", ( req, res, next) => {
+// 	if (req.header("Referer").slice(-17) == "rtk-joyo-comparer") {
+// 		rtkStatic(req, res, next);
+// 	} else {
+// 		homeStatic(req, res, next);
+// 	}
+// });
 app.use("/static", ( req, res, next) => {
 	// console.log(req.url);
-	console.log(req.header("Referer").match("UtaSuki")[0]);
+	// console.log(req.header("Referer").match("UtaSuki")[0]);
 	if (req.header("Referer").slice(-17) == "rtk-joyo-comparer") {
 		rtkStatic(req, res, next);
-	} else if (req.header("Referer").match("UtaSuki")[0] == "UtaSuki") {
-		console.log("UTASUKI SOM FAN");
-		utasukiStatic(req, res, next);
 	} else {
 		homeStatic(req, res, next);
 	}
+	// try { bara lös
+	// 	if (req.header("Referer").match("UtaSuki")[0] == "UtaSuki") {
+	// 		console.log("UTASUKI SOM FAN");
+	// 		utasukiStatic(req, res, next);
+	// 	} else {
+	// 		homeStatic(req, res, next);
+	// 	}
+	// } catch(error) {
+	// 	console.log("Error in your mum. I don't care");
+	// 	homeStatic(req, res, next);
+	// }
+	
 });
+
+
 
 // for main site
 app.get("/", (req, res) =>
