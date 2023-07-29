@@ -43,15 +43,13 @@ app.use("/static", ( req, res, next) => {
 
 
 // for main site
-app.get("/", (req, res) =>
-{
+app.get("/", (req, res) => {
 	res.sendFile(__dirname + "/index.html");
 });
 
 
 // for rtk-joyo-comparer site
-app.get("/rtk-joyo-comparer", (req, res) =>
-{
+app.get("/rtk-joyo-comparer", (req, res) => {
 	res.sendFile(__dirname + "/rtk-joyo-comparer/Server/index.html");
 });
 
@@ -61,8 +59,7 @@ app.get("/UtaSuki/", (req, res) => {
 	res.sendFile(__dirname + "/UtaSuki/index.html");
 });
 // this is not optimal
-app.get("/UtaSuki/add_item", (req, res) =>
-{
+app.get("/UtaSuki/add_item", (req, res) => {
 	console.log("dirname: " + __dirname);
 	res.sendFile(__dirname + "/UtaSuki/add_item.html"); 
 });
