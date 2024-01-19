@@ -23,6 +23,7 @@ app.use("/static", ( req, res, next) => {
 	if (req.header("Referer") != undefined)
 		if (req.header("Referer").slice(-17) == "rtk-joyo-comparer")
 			rtkStatic(req, res, next);
+		else homeStatic(req, res, next);
 	else homeStatic(req, res, next); // bruv
 });
 
