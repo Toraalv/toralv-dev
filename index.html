@@ -6,10 +6,6 @@
 		<title>Toralv</title>
 		<link rel="icon" type="image/x-icon" href="static/images/pfp.png">
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="static/stylesheets/index.css">
 		<meta property="og:title" content="Toralv">
 		<meta property="og:type" content="website">
@@ -24,78 +20,106 @@
 		<script src="static/javascripts/jquery-3.6.3.min.js"></script>
 	</head>
 	<body>
-		<aside>
-			<div id="bio">
-				<span id="name">
-					<img src="static/images/pfp.png">
-					<h1>Toralv</h1>
-				</span>
-				<p>
-					Yo, I'm a 21 year old guy from Sweden. Currently studying Computer Science at Karlstad University, and Japanese in my free time.
-					My biggest interests are drifting, programming, Japan and Hololive ( ^)o(^ )b
-				</p>
+		<aside class="sway-window">
+			<div class="sway-window-title">
+				<h5>env | grep USER</h5>
+				<h5>Profile</h5>
 			</div>
-			<div id="contact">
-				<p>
-					If you want to contact me:
-				</p>
-				<div class="contact-item" id="github">
-					<a href="https://github.com/Toraalv">
-						<img src="static/images/github-mark-white.svg">
-						Toraalv
-					</a>
+			<div class="sway-window-content" id="aside-content">
+				<div id="bio">
+					<span id="name">
+						<img src="static/images/pfp.png">
+						<h1>Toralv</h1>
+					</span>
+					<p>
+						Yo, I'm a 21 year old guy from Sweden. Currently studying Computer Science at Karlstad University, and Japanese in my free time.
+						My biggest interests are drifting, programming, Japan and Hololive ( ^)o(^ )b
+					</p>
 				</div>
-				<div class="contact-item" id="email">
-					<a target="_blank" rel="noopener noreferrer" href="mailto:contact@toralv.dev">
-						<img src="static/images/gmail.png">
-						contact@toralv.dev
-					</a>
+				<div class="spacer"></div>
+				<div id="contact">
+					<p>
+						If you want to contact me:
+					</p>
+					<div class="contact-item" id="github">
+						<a href="https://github.com/Toraalv">
+							<img src="static/images/github-mark-white.svg">
+							Toraalv
+						</a>
+					</div>
+					<div class="contact-item" id="email">
+						<a target="_blank" rel="noopener noreferrer" href="mailto:contact@toralv.dev">
+							<img src="static/images/gmail.png">
+							contact@toralv.dev
+						</a>
+					</div>
 				</div>
 			</div>
 		</aside>
-		<main id="projects">
-			<h2 id="washinopurojekuto">My projects</h2>
-			<section class="project-item">
-				<div class="project-name">
-					<h1>RTK1 Joyo Comparer</h1>
-					<a href="https://github.com/Toraalv/rtk-joyo-comparer">
-						<h5>&lt;GitHub&gt;</h5>
-					</a>
-					<a href="/rtk-joyo-comparer">
-						<h5>&lt;Website&gt;</h5>
-					</a>
-				</div>
-				<div class="project-desc">
-					<p>
-						RTK1 Joyo comparer is a website that visualises how much of 
-						the Joyo kanji you know from James Heisig's book "Remembering 
-						the Kanji". 
-						<br>
-						Pretty useless, but visualises your progress in a nice way.
-					</p>
-				</div>
-			</section>
-			<section class="project-item">
-				<div class="project-name">
-					<h1>UtaSuki (歌好き)</h1>
-					<a href="https://github.com/Toraalv/UtaSuki">
-						<h5>&lt;GitHub&gt;</h5>
-					</a>
-					<!--<a href="https://utasuki.toralv.dev">
-						<h5>&lt;Website&gt;</h5>
-						</a>-->
-				</div>
-				<div class="project-desc">
-					<p>
-						Currently, this is only a simple list of my favourite songs 
-						per month since February 2020. I have a hard time thinking 
-						that there would be a market for a site like this, where 
-						you can add your favourite songs per month, since sites like 
-						ask.fm already exists, but I made this because I thought it 
-						was neat.
-					</p>
-				</div>
-			</section>
+		<main id="projects" class="sway-window">
+			<div class="sway-window-title">
+				<h5>ls -l ~/Documents/projects/</h5>
+				<h5>My projects</h5>
+			</div>
+			<div class="sway-window-content">
+				<section class="project-item">
+					<div class="project-name">
+						<h1>RTK1 Jōyō Comparer</h1>
+						<a href="https://github.com/Toraalv/rtk-joyo-comparer">
+							<h5>&lt;GitHub&gt;</h5>
+						</a>
+						<a href="/rtk-joyo-comparer">
+							<h5>&lt;Website&gt;</h5>
+						</a>
+					</div>
+					<div class="project-desc">
+						<p>
+							RTK1 Jōyō comparer is a website that visualises how much of 
+							the Jōyō kanji you know from James Heisig's book "Remembering 
+							the Kanji".
+							<br>
+							Pretty useless, but visualises your progress in a nice way.
+						</p>
+					</div>
+				</section>
+				<div class="project-divider"></div>
+				<section class="project-item">
+					<div class="project-name">
+						<h1>UtaSuki (歌好き)</h1>
+						<a href="https://github.com/Toraalv/UtaSuki">
+							<h5>&lt;GitHub&gt;</h5>
+						</a>
+						<a href="https://utasuki.toralv.dev">
+							<h5>&lt;Website&gt;</h5>
+						</a>
+					</div>
+					<div class="project-desc">
+						<p>
+							Currently, this is only a simple list of my favourite songs 
+							per month since February 2020. I plan to add user accounts
+							so people can sign up and have their own list, but sites
+							like that already <em>kind of</em> exists, e.g. last.fm.
+							Nonetheless I still felt like this was a neat way of visualising
+							my favourite songs.
+						</p>
+					</div>
+				</section>
+				<div class="project-divider"></div>
+				<section class="project-item">
+					<div class="project-name">
+						<h1>toralv-dev</h1>
+						<a href="https://github.com/Toraalv/toralv-dev">
+							<h5>&lt;GitHub&gt;</h5>
+						</a>
+					</div>
+					<div class="project-desc">
+						<p>
+							The website you're looking at. Heavily inspired by my own swaywm
+							setup.
+						</p>
+					</div>
+				</section>
+			</div>
 		</main>
 		<script src="static/javascripts/index.js"></script>
 	</body>
