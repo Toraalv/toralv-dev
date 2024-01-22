@@ -28,7 +28,7 @@ app.use("/static", ( req, res, next) => {
 });
 
 app.get("/", (req, res) => {
-	res.sendFile(__dirname + "/index.html");
+	res.sendFile(__dirname + "/public/html/index.html");
 });
 
 app.get("/rtk-joyo-comparer", (req, res) => {

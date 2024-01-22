@@ -115,7 +115,7 @@ img{vertical-align:bottom}
 
 .project-item {
 	padding: 10px;
-	margin-bottom: 10px;
+	/* margin-bottom: 10px; */
 	width: 100%;
 	box-sizing: border-box;
 }
@@ -123,6 +123,7 @@ img{vertical-align:bottom}
 .project-divider {
 	height: 1px;
 	background-color: var(--unfocused-border);
+	margin: 4px 0 4px 0;
 }
 
 .project-name {
@@ -137,6 +138,7 @@ img{vertical-align:bottom}
 
 .project-desc p {
 	font-weight: normal;
+	margin: 16px 0 0 0;
 }
 
 /* Vänstra spalten */
@@ -180,7 +182,7 @@ aside {
 }
 
 .contact-item:hover {
-	background-color: var(--box_bkg_color_H);
+	background-color: var(--focused-background);
 }
 
 #discord img {
