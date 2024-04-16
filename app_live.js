@@ -23,20 +23,19 @@ app.use("/static", ( req, res, next) => {
 	if (req.header("Referer") != undefined)
 		if (req.header("Referer").slice(-17) == "rtk-joyo-comparer")
 			rtkStatic(req, res, next);
+		else homeStatic(req, res, next);
 	else homeStatic(req, res, next); // bruv
 });
 
-app.get("/", (req, res) =>
-{
-	res.sendFile(__dirname + "/index.html");
+app.get("/", (req, res) => {
+	res.sendFile(__dirname + "/public/html/index.html");
 });
 
-app.get("/rtk-joyo-comparer", (req, res) =>
-{
+app.get("/rtk-joyo-comparer", (req, res) => {
 	res.sendFile(__dirname + "/rtk-joyo-comparer/Server/index.html");
 });
 
-app.all("*", (req, res) => { // for everything else
+app.all("*", (req, res) => {
 	console.log("sussy sus", req.url);
     res.send("<h1><b>404 not found</h1>");
 });
