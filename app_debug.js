@@ -22,7 +22,7 @@ app.get("/", (req, res) => {
 
 // for rtk-joyo-comparer site
 app.get("/rtk-joyo-comparer", (req, res) => {
-	res.sendFile(__dirname + "/rtk-joyo-comparer/Server/index.html");
+	res.sendFile(__dirname + "/rtk-joyo-comparer/Server/public/html/index.html");
 });
 
 app.all("*", (req, res) => {
