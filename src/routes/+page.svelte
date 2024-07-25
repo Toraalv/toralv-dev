@@ -2,21 +2,21 @@
 	import { page } from "$app/stores";
 	import SwayWindow from "$lib/SwayWindow.svelte";
 	import ProjectItem from "$lib/ProjectItem.svelte";
+	import projects from "./projects.json";
 	import { _ } from "svelte-i18n";
 </script>
 
 <SwayWindow title="{$_('general.me')}" altTitle="{$_('general.me+')}" mainStyle="max-width: 300px; min-width: 300px" contentStyle="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-	<div id="bio">
-		<span id="name">
-			<img src="/favicon.png" alt="toralv's profile">
-			<h1>Toralv</h1>
+	<div>
+		<span style="display: flex; align-items: center;">
+			<img src="/favicon.png" alt="toralv's profile" style="max-width: 100px;">
+			<h1 style="font-size: 30pt; margin: 0 20px 0 20px;">Toralv</h1>
 		</span>
-		<p>
-			Yo, I'm a 21 year old guy from Sweden. Currently studying Computer Science at Karlstad University, and Japanese in my free time.
-			My biggest interests are drifting, programming, Japan and Hololive ( ^)o(^ )b
+		<p style="margin-top: 5px; font-weight: normal;">
+			よ, I'm a 21 year old guy from Sweden. Currently studying Computer Science at Karlstad University, and Japanese in my free time. My biggest interests are drifting, programming, Japan and Vtubers ( ^)o(^ )b
 		</p>
 	</div>
-	<div id="contact">
+	<div style="display: flex; flex-direction: column;">
 		<p>
 			If you want to contact me:
 		</p>
@@ -47,35 +47,16 @@
 	</div>
 </SwayWindow>
 
-<!-- this ain't it fam-->
 <SwayWindow title="{$_('general.projects')}" altTitle="{$_('general.projects+')}" contentStyle="overflow-x: unset; overflow-y: unset">
-	<ProjectItem title="RTK1 Jōyō Comparer" links="{[{'link': 'https://github.com/Toraalv/rtk-joyo-comparer', 'service': 'GitHub'}, {'link': 'https://toralv.dev/rtk-joyo-comparer', 'service': 'Website'}]}" description={`RTK1 Jōyō comparer is a website that visualises how much of the Jōyō kanji you know from James Heisig's book "Remembering the Kanji". Pretty useless, but visualises your progress in a nice way.`}/>
-	<div style="height: 1px; background-color: var(--unfocused_border);	margin: 4px 0 4px 0;">
-	<ProjectItem title="UtaSuki (歌好き)" links="{[{'link': 'https://github.com/Toraalv/UtaSuki', 'service': 'GitHub'}, {'link': 'https://utasuki.toralv.dev', 'service': 'Website'}]}" description={`Currently, this is only a simple list of my favourite songs per month since February 2020. I plan to add user accounts so people can sign up and have their own list, but sites like that already kind of exists, e.g. last.fm. Nonetheless I still feel like this is a neat way of visualising one's favourite songs.`}/>
-	<div style="height: 1px; background-color: var(--unfocused_border);	margin: 4px 0 4px 0;">
-	<ProjectItem title="toralv-dev" links="{[{'link': 'https://github.com/Toraalv/toralv-dev', 'service': 'GitHub'}]}" description={`The website you're looking at. Heavily inspired by my own swaywm setup.`}/>
+	{#each projects as project, i}
+		<ProjectItem title="{project.title}" links="{project.links}" description="{project.description}"/>
+		{#if i + 1 != projects.length}
+			<div style="height: 1px; background-color: var(--unfocused_border);	margin: 4px 0 4px 0;"/>
+		{/if}
+	{/each}
 </SwayWindow>
 
 <style>
-	#bio img {
-		max-width: 100px;
-	}
-	#bio p {
-		margin-top: 5px;
-		font-weight: normal;
-	}
-	#name {
-		display: flex;
-		align-items: center;
-	}
-	#name h1{
-		font-size: 30pt;
-		margin: 0 20px 0 20px;
-	}
-	#contact {
-		display: flex;
-		flex-direction: column;
-	}
 	.contact-item:hover {
 		background-color: var(--focused-background);
 	}

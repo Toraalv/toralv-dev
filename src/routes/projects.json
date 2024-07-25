@@ -1,0 +1,44 @@
+[
+	{
+		"title": "RTK1 Jōyō Comparer",
+		"links": [
+			{
+				"link": "https://github.com/Toraalv/rtk-joyo-comparer",
+				"title": "github"
+			},
+			{
+				"link": "https://rtk-joyo-comparer.toralv.dev",
+				"title": "website"
+			}
+		],
+		"description": "RTK1 Jōyō comparer is a website that visualises how much of the Jōyō kanji you know from James Heisig's book \"Remembering the Kanji\".<br>Pretty useless, but visualises your progress in a nice way."
+	},
+	{
+		"title": "UtaSuki (歌好き)",
+		"links": [
+			{
+				"link": "https://github.com/Toraalv/UtaSuki",
+				"title": "github"
+			},
+			{
+				"link": "https://utasuki.toralv.dev",
+				"title": "website"
+			}
+		],
+		"description": "Currently, this is only a simple list of my favourite songs per month since February 2020. I plan to add user accounts so people can sign up and have their own list, but sites like that already <em>kind of</em> exists, e.g. last.fm. Nonetheless I still feel like this is a neat way of visualising one's favourite songs."
+	},
+	{
+		"title": "toralv-dev",
+		"links": [
+			{
+				"link": "https://github.com/Toraalv/toralv-dev",
+				"title": "github"
+			},
+			{
+				"link": "https://toralv.dev",
+				"title": "website"
+			}
+		],
+		"description": "The website you're looking at. Heavily inspired by my own <a href=\"https://github.com/swaywm/sway\">swaywm</a> setup."
+	}
+]
