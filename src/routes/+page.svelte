@@ -13,8 +13,9 @@
 			<h1 style="font-size: 30pt; margin: 0 20px 0 20px;">Toralv</h1>
 		</span>
 		<p style="margin-top: 5px; font-weight: normal;">
-			よ, I'm a 21 year old guy from Sweden. Currently studying Computer Science at Karlstad University, and Japanese in my free time. My biggest interests are drifting, programming, Japan and Vtubers ( ^)o(^ )b
+			よ, I'm a 22 year old guy from Sweden. I have studied Computer Science at Karlstad University and Japanese at Kanazawa University in Japan. I use GNU/Linux for everything and Vim is my prefered editor. I'm currently mostly working on my site <a href="https://utasuki.toralv.dev">UtaSuki</a>.
 		</p>
+		<p style="font-weight: normal; text-align: center; margin-top: 20px;">( ^)o(^ )b</p>
 	</div>
 	<div style="display: flex; flex-direction: column;">
 		<p>
@@ -30,18 +31,6 @@
 			<a target="_blank" rel="noopener noreferrer" href="mailto:contact@toralv.dev">
 				<img src="/gmail.png" alt="gmail">
 				contact@toralv.dev
-			</a>
-		</div>
-		<div class="contact-item" id="mastodon">
-			<a target="_blank" rel="noopener noreferrer" href="https://mstdn.jp/@Toralv">
-				<img src="/mastodon-logo.svg" alt="mastodon">
-				Toralv@mstdn.jp
-			</a>
-		</div>
-		<div class="contact-item" id="myanimelist">
-			<a target="_blank" rel="noopener noreferrer" href="https://myanimelist.net/profile/Toralv">
-				<img src="/mal-logo.jpeg" alt="myanimelist">
-				Toralv
 			</a>
 		</div>
 	</div>
