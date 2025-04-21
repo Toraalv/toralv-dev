@@ -2,7 +2,7 @@
 
 My personal website for displaying my projects. Written with [svelte](https://svelte.dev/).
 
-## Developing
+## Running
 
 ```bash
 $ git clone https://github.com/Toraalv/toralv-dev.git
