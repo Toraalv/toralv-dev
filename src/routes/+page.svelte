@@ -1,12 +1,12 @@
 <script>
-	import { page } from "$app/stores";
+	import { page } from "$app/state";
 	import SwayWindow from "$lib/SwayWindow.svelte";
 	import ProjectItem from "$lib/ProjectItem.svelte";
 	import projects from "./projects.json";
 	import { _ } from "svelte-i18n";
 </script>
 
-<SwayWindow title="{$_('general.me')}" altTitle="{$_('general.me+')}" mainStyle="max-width: 300px; min-width: 300px" contentStyle="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+<SwayWindow title="{$_("general.me")}" altTitle="{$_("general.me+")}" mainStyle="max-width: 300px; min-width: 300px" contentStyle="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
 	<div>
 		<span style="display: flex; align-items: center;">
 			<img src="/favicon.png" alt="toralv's profile" style="max-width: 100px;">
@@ -36,11 +36,11 @@
 	</div>
 </SwayWindow>
 
-<SwayWindow title="{$_('general.projects')}" altTitle="{$_('general.projects+')}" contentStyle="overflow-x: unset; overflow-y: unset">
+<SwayWindow title="{$_("general.projects")}" altTitle="{$_("general.projects+")}" contentStyle="overflow-x: unset; overflow-y: unset">
 	{#each projects as project, i}
 		<ProjectItem title="{project.title}" links="{project.links}" description="{project.description}"/>
 		{#if i + 1 != projects.length}
-			<div style="height: 1px; background-color: var(--unfocused_border);	margin: 4px 0 4px 0;"/>
+			<div style="height: 1px; background-color: var(--unfocused_border);	margin: 4px 0 4px 0;"></div>
 		{/if}
 	{/each}
 </SwayWindow>
