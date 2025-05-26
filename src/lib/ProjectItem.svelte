@@ -1,7 +1,6 @@
 <script>
-	export let title = "";
-	export let links = [];
-	export let description = "";
+
+	let { title = "", links = [], description = "" } = $props();
 </script>
 
 <section style="padding: 10px; width: 100%; box-sizing: border-box;">

@@ -1,10 +1,13 @@
 <script>
-	export let title = null;
-	export let altTitle = null;
-	export let mainStyle = null;
-	export let titleStyle = null;
-	export let contentStyle = null;
-	export let id = null;
+	let {
+		title = null,
+		altTitle = null,
+		mainStyle = null,
+		titleStyle = null,
+		contentStyle = null,
+		id = null,
+		children
+	} = $props();
 </script>
 
 <div class="sway_window" style="{mainStyle}">
@@ -13,7 +16,7 @@
 		<h5>{altTitle}</h5>
 	</div>
 	<div class="sway_window_content" id="{id}" style="{contentStyle}">
-		<slot />
+		{@render children?.()}
 	</div>
 </div>
 
