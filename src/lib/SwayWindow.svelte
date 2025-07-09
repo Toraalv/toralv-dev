@@ -1,59 +1,71 @@
 <script>
 	let {
 		title = null,
-		altTitle = null,
+		altTitle = title,
 		mainStyle = null,
 		titleStyle = null,
 		contentStyle = null,
-		id = null,
+		content = $bindable(),
 		children
 	} = $props();
 </script>
 
-<div class="sway_window" style="{mainStyle}">
-	<div class="sway_window_title" style="{titleStyle}">
-		<h5>{title}</h5>
-		<h5>{altTitle}</h5>
+<div class="swayWindow" style={mainStyle}>
+	<div class="swayWindowTitle" style={titleStyle}>
+		<h5 title={altTitle}>{title}</h5>
 	</div>
-	<div class="sway_window_content" id="{id}" style="{contentStyle}">
+	<div bind:this={content} class="swayWindowContent" style={contentStyle}>
 		{@render children?.()}
 	</div>
 </div>
 
 <style>
-	.sway_window {
-		border: 1px solid var(--unfocused_border);
-		background-color: var(--bkg);
+	.swayWindow {
+		position: relative;
 		margin: 10px;
 		display: flex;
 		flex-grow: 1;
 		flex-direction: column;
+		overflow: auto;
 	}
-
-	.sway_window:hover {
-	border: 1px solid var(--accent);
+	.swayWindow:hover .swayWindowTitle, .swayWindow:hover .swayWindowContent, .swayWindow:focus .swayWindowTitle, .swayWindow:focus .swayWindowContent {
+		border-color: var(--accent);
 	}
-
-	.sway_window_title {
+	.swayWindow:hover .swayWindowTitle, .swayWindow:focus .swayWindowTitle {
+		background-color: var(--accent);
+		color: var(--accent_text);
+	}
+	.swayWindowTitle {
 		font-weight: normal;
-		padding-left: 4px;
+		padding: 0 4px;
 		background-color: var(--unfocused_background);
 		color: var(--unfocused_text);
 		height: 20px;
-		line-height: 20px;
+		border-radius: var(--border_radius) var(--border_radius) 0 0;
+		border-top: 2px solid var(--unfocused_background);
+		border-right: 2px solid var(--unfocused_background);
+		border-left: 2px solid var(--unfocused_background);
+		transition: var(--transition);
 	}
-	.sway_window:hover .sway_window_title {
-		background-color: var(--accent);
-		color: var(--text);
+	.swayWindowTitle > * {
+		overflow-x: hidden;
+		text-overflow: ellipsis;
+		text-wrap: nowrap;
+		text-align: center;
+		height: 100%;
+		align-content: center;
 	}
-	
-	.sway_window_title h5:last-child { display: none; }
-	.sway_window_title:hover h5:last-child { display: block; }
-	.sway_window_title:hover h5:first-child { display: none; }
-	
-	.sway_window_content {
+	.swayWindowContent {
 		padding: 10px;
 		overflow-x: hidden;
 	  	overflow-y: auto;
+		background-color: var(--bg);
+		height: 100%;
+		border-radius: 0 0 var(--border_radius) var(--border_radius);
+		border-right: 2px solid var(--unfocused_background);
+		border-bottom: 2px solid var(--unfocused_background);
+		border-left: 2px solid var(--unfocused_background);
+		transition: var(--transition);
 	}
 </style>
+

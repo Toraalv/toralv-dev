@@ -25,7 +25,7 @@
 				"title": "website"
 			}
 		],
-		"description": "UtaSuki is a place where people can document their favourite music on a montly basis. This is all began when I started writing down my own favourite music every month since 2020, and with that data I wanted to present it in a nice way. Though <em>nice way</em> may be rather subjective."
+		"description": "UtaSuki is a place where people can document their favourite music on a montly basis. This is all began when I started writing down my own favourite music every month since 2020, and with that data I wanted to present it in a nice way."
 	},
 	{
 		"title": "toralv-dev",
@@ -40,5 +40,15 @@
 			}
 		],
 		"description": "The website you're looking at. Heavily inspired by my own <a href=\"https://github.com/swaywm/sway\">swaywm</a> setup."
+	},
+	{
+		"title": "game-of-life",
+		"links": [
+			{
+				"link": "https://github.com/Toraalv/game-of-life",
+				"title": "github"
+			}
+		],
+		"description": "Conway's game of life, implemented in C."
 	}
 ]

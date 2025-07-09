@@ -1,6 +1,6 @@
 {
 	"name": "toralv-dev",
-	"version": "0.0.1-svelte",
+	"version": "0.0.2-svelte",
 	"private": true,
 	"scripts": {
 		"dev": "APP_ENV=dev vite dev",

@@ -9,7 +9,7 @@
 <SwayWindow title="{$_("general.me")}" altTitle="{$_("general.me+")}" mainStyle="max-width: 300px; min-width: 300px" contentStyle="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
 	<div>
 		<span style="display: flex; align-items: center;">
-			<img src="/favicon.png" alt="toralv's profile" style="max-width: 100px;">
+			<img src="https://cdn.utasuki.com/static/images/profile_pictures/1.png" alt="toralv's profile" style="max-width: 100px;">
 			<h1 style="font-size: 30pt; margin: 0 20px 0 20px;">Toralv</h1>
 		</span>
 		<p style="margin-top: 5px; font-weight: normal;">

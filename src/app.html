@@ -3,55 +3,63 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Toralv</title>
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<link rel="icon" href="https://cdn.utasuki.com/static/images/profile_pictures/1.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta property="og:title" content="Toralv">
 		<meta property="og:type" content="website">
-		<meta property="og:image" content="%sveltekit.assets%/favicon.png">
+		<meta property="og:image" content="https://cdn.utasuki.com/static/images/profile_pictures/1.png">
 		<meta property="og:image:width" content="200px">
 		<meta property="og:image:height" content="200px">
 		<meta property="og:image:type" content="image/png">
 		<meta property="og:url" content="https://toralv.dev">
-		<meta property="og:description" content="Toralv's personal website.">	
+		<meta property="og:description" content="Toralv's personal website.">
+		<meta name="description" content="Toralv's personal website.">
 		<meta name="theme-color" content="#6a3cbf">
+
 		<style>
 			@font-face {
 				font-family: swaywm_monospace;
 				src: url("/fonts/DejaVuSans/DejaVuSansMono.ttf") format("truetype");
 				font-weight: normal;
+				font-display: swap;
 			}
 			@font-face {
 				font-family: DejaVuSans;
 				src: url("/fonts/DejaVuSans/DejaVuSans.ttf") format("truetype");
 				font-weight: normal;
+				font-display: swap;
 			}
 			@font-face {
 				font-family: swaywm_monospace;
 				src: url("/fonts/DejaVuSans/DejaVuSansMono-Bold.ttf") format("truetype");
 				font-weight: bold;
+				font-display: swap;
 			}
 
 			:root {
-				--bg: #000000;
-				--box_bg: #000000;
-				--box_bg_H: #4c4c4c;
-				--border: #6a3cbf;
-				--border_H: #4c4c4c;
+				--default_accent: #6a3cbf;
+				--default_accent_text: #dedede;
+				--default_dark_text: #000000;
+				--default_border_radius: 8px;
+				--default_transition: 100ms;
+
+				--bg: #000000E0;
 				--text: #dedede;
+				--accent_text: var(--default_accent_text);
 				--d_text: #9e9e9e;
+				--d2_text: #4c4c4c;
+				--accent: var(--default_accent);
 				--link: #3366CC;
-				--accent: #6a3cbf;
-				--error: #860000;
-				--warning: #865800;
-				--info: #3366CC;
-				
-				--focused_indicator: #9D66FF;
-				--focused_inactive-indicator: #484e50;
 				
 				--unfocused_border: #333333;
 				--unfocused_background: #222222;
 				--unfocused_text: #9e9e9e;
-				--unfocused_indicator: #292d2e;
+
+				--input_bg: #111111;
+
+				--border_radius: var(--default_border_radius);
+				--border_radius_small: calc(var(--border_radius) / 2);
+				--transition: var(--default_transition);
 			}
 
 			html {
