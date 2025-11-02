@@ -3,6 +3,7 @@
 	"version": "0.0.2-svelte",
 	"private": true,
 	"scripts": {
+		"preinstall": "npx only-allow pnpm",
 		"dev": "APP_ENV=dev vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
