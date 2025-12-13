@@ -13,7 +13,7 @@
 			<h1 style="font-size: 30pt; margin: 0 20px 0 20px;">Toralv</h1>
 		</span>
 		<p style="margin-top: 5px; font-weight: normal;">
-			よ, I'm a 22 year old guy from Sweden. I have studied Computer Science at Karlstad University and Japanese at Kanazawa University in Japan. I use GNU/Linux for everything and Vim is my preferred editor.
+			よ, I'm a {Math.abs(new Date(Date.now() - new Date("2002-11-22")).getUTCFullYear() - 1970)} year old guy from Sweden. I have studied Computer Science at Karlstad University and Japanese at Kanazawa University in Japan. I use GNU/Linux for everything and Vim is my preferred editor.
 		</p>
 		<p style="font-weight: normal; text-align: center; margin-top: 20px;">( ^)o(^ )b</p>
 	</div>
