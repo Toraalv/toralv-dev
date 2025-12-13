@@ -29,7 +29,7 @@
 		</div>
 		<div class="contact-item" id="email">
 			<a target="_blank" rel="noopener noreferrer" href="mailto:contact@toralv.dev">
-				<img src="/gmail.png" alt="gmail">
+				<img src="/mail.png" alt="mail">
 				contact@toralv.dev
 			</a>
 		</div>
