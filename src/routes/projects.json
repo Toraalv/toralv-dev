@@ -1,19 +1,5 @@
 [
 	{
-		"title": "RTK1 Jōyō Comparer",
-		"links": [
-			{
-				"link": "https://github.com/Toraalv/rtk-joyo-comparer",
-				"title": "github"
-			},
-			{
-				"link": "https://rtk-joyo-comparer.toralv.dev",
-				"title": "website"
-			}
-		],
-		"description": "RTK1 Jōyō comparer is a website that visualises how much of the Jōyō kanji you know from James Heisig's book \"Remembering the Kanji\".<br>Pretty useless, but visualises your progress in a nice way."
-	},
-	{
 		"title": "UtaSuki (歌好き)",
 		"links": [
 			{
@@ -26,6 +12,34 @@
 			}
 		],
 		"description": "UtaSuki is a place where people can document their favourite music on a montly basis. This is all began when I started writing down my own favourite music every month since 2020, and with that data I wanted to present it in a nice way."
+	},
+	{
+		"title": "RSS for MAL (rfm)",
+		"links": [
+			{
+				"link": "https://github.com/Toraalv/rss-for-mal",
+				"title": "github"
+			},
+			{
+				"link": "https://rfm.toralv.dev",
+				"title": "website"
+			}
+		],
+		"description": "A simple API wrapper for <a href=\"https://myanimelist.net\">MyAnimeList</a> that fetches a requested users currently watching, and airing, anime, and then fetches the broadcast schedule for these. The data is then presented as either RSS or as a JSON formatted string, specifically made for <a href=\"https://github.com/Alexays/Waybar\">Waybar</a>."
+	},
+	{
+		"title": "RTK1 Jōyō Comparer",
+		"links": [
+			{
+				"link": "https://github.com/Toraalv/rtk-joyo-comparer",
+				"title": "github"
+			},
+			{
+				"link": "https://rtk-joyo-comparer.toralv.dev",
+				"title": "website"
+			}
+		],
+		"description": "RTK1 Jōyō comparer is a website that visualises how much of the Jōyō kanji you know from James Heisig's book \"Remembering the Kanji\".<br>Pretty useless, but visualises your progress in a nice way."
 	},
 	{
 		"title": "toralv-dev",
