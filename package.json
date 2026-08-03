@@ -11,14 +11,14 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.3.1",
-		"@sveltejs/kit": "^2.57.0",
+		"@sveltejs/kit": "^2.70.2",
 		"@sveltejs/vite-plugin-svelte": "^4.0.4",
-		"svelte": "^5.55.2",
+		"svelte": "^5.56.8",
 		"vite": "^5.4.21"
 	},
 	"type": "module",
 	"dependencies": {
 		"svelte-i18n": "^4.0.1",
-		"vitest": "^3.2.4"
+		"vitest": "^3.2.7"
 	}
 }
